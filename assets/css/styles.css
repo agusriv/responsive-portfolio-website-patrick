@@ -296,19 +296,11 @@ svg {
   transform: translateY(-.25rem);
 }
 
-.home__image{
-  justify-self: center;
-}
-
-.home__blob{
-  width: 320px;
-  fill: var(--first-color);
-  filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, .5));
-}
-
 .home__img{
-  width: 600px;
-  transform: translateX(50px);
+  width: 300px;
+  justify-self: center;
+  fill: var(--first-color);
+  filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, .3));
 }
 
 /*=============== BUTTON ===============*/
@@ -364,7 +356,7 @@ svg {
 /* For medium devices */
 @media screen and (min-width: 576px){
   .home__container{
-    grid-template-columns: 360px;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
   }
 }
@@ -379,6 +371,10 @@ svg {
     align-items: center;
   }
 
+  .home__img{
+    width: 470px;
+  }
+
   .home__data{
     text-align: initial;
   }
@@ -387,9 +383,6 @@ svg {
     justify-content: initial;
   }
 
-  .home__blob{
-    width: 400px;
-  }
 }
   
 
@@ -432,9 +425,6 @@ svg {
     grid-template-columns: 455px 550px;
     column-gap: 7rem;
     padding-block: 2rem 3rem;
-  }
-  .home__blob{
-    width: 550px;
   }
   .home__content{
     row-gap: 4.5rem;
