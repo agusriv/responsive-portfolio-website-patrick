@@ -46,10 +46,10 @@ const sendEmail = (e) =>{
     e.preventDefault()
 
     // serviceID - templateID - #form - publicKey
-    emailjs.sendForm('service_8m05i2p', 'template_jl4357g', '#contact-form', 'TsIey9f6QYBPNhf1N')
+    emailjs.sendForm('service_rkhwbvn', 'template_5yvccxg', '#contact-form', 'SU0d4rUkE6_WCa8le')
         .then(()=> {
             // Show sent message
-            contactMessage.textContent = 'Message sent successfully ✅'
+            contactMessage.textContent = 'Mensaje enviado correctamente ✅'
 
             // Remove message after five seconds
             setTimeout(() =>{
@@ -61,7 +61,7 @@ const sendEmail = (e) =>{
 
         }, () =>{
             // Show error message
-            contactMessage.textContent = 'Error sending the message 🚨'
+            contactMessage.textContent = 'Error al enviar mensaje 🚨'
         })
                 
 }

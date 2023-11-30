@@ -728,9 +728,14 @@ svg {
   .home__content{
     row-gap: 4.5rem;
   }
-  .home__img,
-  .about__image{
+  .home__img{
     width: 400px;
+  }
+  .about__image{
+    width: 500px;
+  }
+  .home__img{
+    margin-top: -3rem;
   }
   .home__description{
     margin-block: 1.5rem 2.5rem;
